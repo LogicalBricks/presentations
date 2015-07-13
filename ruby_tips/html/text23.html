@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Diapositiva 24</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primera página</a> <a href="text22.html">Regresar</a> <a href="text24.html">Continuar</a> <a href="text28.html">Última página</a> <a href="ruby_tips.html">Resumen</a> <a href="img23.html">Imagen</a></center><br>
+<h1>def</h1>
+<h2><font color="#000080">class</font><font color="#4C4C4C"> </font><font color="#008000">Base</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#000080">def</font><font color="#4C4C4C"> </font><font color="#008000">self.around</font>(<font color="#008000">method_name</font>)</h2>
+<h2><font color="#4C4C4C">    </font><font color="#008000">define_method</font>(<font color="#FF0000">&quot;before_&quot;</font><font color="#4C4C4C"> </font>+<font color="#4C4C4C"> </font><font color="#008000">method_name.to_s</font>)<font color="#4C4C4C"> </font><font color="#000080">do</font></h2>
+<h2><font color="#4C4C4C">       </font><font color="#008000">puts</font><font color="#4C4C4C"> </font><font color="#FF0000">&quot;Before&quot;</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#000080">end</font></h2>
+<h2><font color="#000080"></font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#008000">define_method</font>(<font color="#FF0000">&quot;after_&quot;</font><font color="#4C4C4C"> </font>+<font color="#4C4C4C"> </font><font color="#008000">method_name.to_s</font>)<font color="#4C4C4C"> </font><font color="#000080">do</font></h2>
+<h2><font color="#4C4C4C">       </font><font color="#008000">puts</font><font color="#4C4C4C"> </font><font color="#FF0000">&quot;After&quot;</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#000080">end</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#000080">end</font></h2>
+<h2><font color="#000080">end</font></h2>
+<h2><font color="#000080">class</font><font color="#4C4C4C"> </font><font color="#008000">A &lt; Base</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#008000">around</font><font color="#4C4C4C"> </font><font color="#000080">def</font><font color="#4C4C4C"> </font><font color="#008000">my_method</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#008000">before_my_method</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#008000">puts</font><font color="#4C4C4C"> </font><font color="#FF0000">&quot;In my method&quot;</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#008000">after_my_method</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#000080">end</font></h2>
+<h2><font color="#000080">end</font></h2>
+<h2><font color="#008000">A.new.my_method</font></h2>
+<h2><font color="#4C4C4C"># Before</font></h2>
+<h2><font color="#4C4C4C"># In my method</font></h2>
+<h2><font color="#4C4C4C"># After</font></h2>
+</body>
+</html>

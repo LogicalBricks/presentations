@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Diapositiva 29</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primera página</a> <a href="text27.html">Regresar</a> Continuar Última página <a href="ruby_tips.html">Resumen</a> <a href="img28.html">Imagen</a></center><br>
+<h1>Refine (respond_to?)</h1>
+<h2><font color="#000080">module</font><font color="#4C4C4C"> </font><font color="#008000">StringHelper</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#008000">refine</font><font color="#4C4C4C"> </font><font color="#008000">String</font><font color="#4C4C4C"> </font><font color="#000080">do</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#000080">def</font><font color="#4C4C4C"> </font><font color="#008000">blank?</font></h2>
+<h2><font color="#4C4C4C">      </font><font color="#008000">nil?</font><font color="#4C4C4C"> </font>||<font color="#4C4C4C"> </font><font color="#008000">empty?</font></h2>
+<h2><font color="#4C4C4C">    </font><font color="#000080">end</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#000080">end</font></h2>
+<h2><font color="#000080">end</font></h2>
+<h2><font color="#000080">class</font><font color="#4C4C4C"> </font><font color="#008000">A</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#008000">using</font><font color="#4C4C4C"> </font><font color="#008000">StringHelper</font></h2>
+<h2><font color="#4C4C4C">  </font><font color="#008000">puts</font><font color="#4C4C4C"> </font><font color="#FF0000">&quot;&quot;</font>.<font color="#008000">respond_to?</font><font color="#4C4C4C"> </font>:<font color="#008000">blank?</font></h2>
+<h2><font color="#4C4C4C">  # false</font></h2>
+<h2><font color="#000080">end</font></h2>
+</body>
+</html>
