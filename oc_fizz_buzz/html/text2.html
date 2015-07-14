@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Diapositiva 3</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primera página</a> <a href="text1.html">Regresar</a> <a href="text3.html">Continuar</a> <a href="text3.html">Última página</a> <a href="fizz_buzz_open_close.html">Resumen</a> <a href="img2.html">Imagen</a></center><br>
+<h1><font color="#000080">class</font> <font color="#008000">FizzBuzzGenerator</font></h1>
+<h2><font color="#000080">class</font> <font color="#008000">FizzBuzzGenerator</font></h2>
+<h2>  <font color="#000080">def</font> <font color="#008000">initialize</font>(<font color="#008000">objects</font>, <font color="#008000">list</font>)</h2>
+<h2>    @<font color="#008000">list</font> = <font color="#008000">list</font></h2>
+<h2>    @<font color="#008000">objects</font> = <font color="#008000">objects</font></h2>
+<h2>  <font color="#000080">end</font></h2>
+<h2>  <font color="#000080">def</font> <font color="#008000">generate</font></h2>
+<h2>    <font color="#008000">result</font> = []</h2>
+<h2>    @<font color="#008000">list.each</font> <font color="#000080">do</font> |<font color="#008000">num</font>|  </h2>
+<h2>      @<font color="#008000">objects.each</font> <font color="#000080">do</font> |<font color="#008000">l</font>|</h2>
+<h2>        <font color="#008000">v</font> = <font color="#008000">l.value</font>(<font color="#008000">num</font>) </h2>
+<h2>        <font color="#000080">unless</font> <font color="#008000">v.nil?</font></h2>
+<h2>          <font color="#008000">result</font> &lt;&lt; <font color="#008000">v</font></h2>
+<h2>          <font color="#000080">break</font></h2>
+<h2>        <font color="#000080">end</font></h2>
+<h2>      <font color="#000080">end</font></h2>
+<h2>    <font color="#000080">end</font></h2>
+<h2>    <font color="#008000">result</font></h2>
+<h2>  <font color="#000080">end</font></h2>
+<h2>end</h2>
+<h2><font color="#008000">objects</font> = [<font color="#008000">FizzBuzz.new</font>, <font color="#008000">Fizz.new</font>, <font color="#008000">Buzz.new</font>, <font color="#008000">NoFizzBuzz.new</font>]</h2>
+<h2><font color="#008000">g</font> = <font color="#008000">FizzBuzzGenerator.new</font>(<font color="#008000">objects</font>, (<font color="#FF3200">1..20</font>).<font color="#008000">to_a</font>)</h2>
+<h2><font color="#008000">r</font> = <font color="#008000">g.generate</font></h2>
+<h2><font color="#008000">puts</font> <font color="#008000">r</font></h2>
+<p>Example taken from rubyplus
+<a href="https://www.rubyplus.com/articles/151">https://www.rubyplus.com/articles/151</a></p>
+</body>
+</html>
